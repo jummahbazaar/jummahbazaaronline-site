@@ -726,3 +726,71 @@ footer.site-footer {
 /* When a type-panel sits inside a split (replaces split-image) */
 .split-image.type-panel { aspect-ratio: 4/5; min-height: unset; }
 
+
+/* ----- Modern logo (replaces brand-logo wordmark) ----- */
+.brand-mark-img {
+  height: 56px;
+  width: auto;
+  display: block;
+}
+@media (max-width: 920px) { .brand-mark-img { height: 48px; } }
+
+/* ----- Brands strip ----- */
+.brands-strip {
+  padding: clamp(2.5rem, 5vw, 4rem) 0;
+  background: var(--ivory);
+  border-top: 1px solid var(--bone);
+  border-bottom: 1px solid var(--bone);
+}
+.brands-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: center;
+}
+@media (max-width: 1080px) { .brands-row { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 600px) { .brands-row { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; } }
+.brand-logo-cell {
+  display: grid;
+  place-items: center;
+  height: 60px;
+  opacity: 0.55;
+  filter: grayscale(50%);
+  transition: opacity 0.25s var(--ease), filter 0.25s var(--ease);
+}
+.brand-logo-cell:hover { opacity: 1; filter: grayscale(0%); }
+.brand-logo-cell img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* ----- Hero with logo as visual ----- */
+.hero-logo-panel {
+  position: relative;
+  aspect-ratio: 4/5;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--ivory) 0%, var(--orange-tint) 100%);
+  display: grid;
+  place-items: center;
+  padding: clamp(2rem, 5vw, 4rem);
+  isolation: isolate;
+}
+.hero-logo-panel img {
+  width: 70%;
+  max-width: 380px;
+  height: auto;
+  z-index: 1;
+}
+.hero-logo-panel .pattern {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  opacity: 0.18; z-index: 0;
+}
+.hero-logo-panel .badge-text {
+  position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%);
+  font-family: var(--font-sans); font-size: 11px; letter-spacing: 0.4em;
+  text-transform: uppercase; color: var(--orange-deep); opacity: 0.7;
+  z-index: 2;
+}
+
