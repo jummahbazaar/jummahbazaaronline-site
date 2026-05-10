@@ -14,14 +14,17 @@
   <meta property="og:url" content="https://jummahbazaaronline.com/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Amiri:ital,wght@0,400;0,700;1,400&family=Pinyon+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
       <pattern id="geo-orange" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-        <path d="M20 0 L40 20 L20 40 L0 20 Z" fill="none" stroke="#d96a26" stroke-width="0.4"/>
-        <path d="M0 0 L40 40 M40 0 L0 40" stroke="#d96a26" stroke-width="0.25"/>
+        <path d="M20 0 L40 20 L20 40 L0 20 Z" fill="none" stroke="currentColor" stroke-width="0.5"/>
+        <path d="M0 0 L40 40 M40 0 L0 40" stroke="currentColor" stroke-width="0.3"/>
+      </pattern>
+      <pattern id="geo-light" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M20 0 L40 20 L20 40 L0 20 Z" fill="none" stroke="#d96a26" stroke-width="0.5"/>
       </pattern>
       <symbol id="medallion" viewBox="0 0 40 40">
         <g fill="none" stroke="currentColor" stroke-width="1.1">
@@ -29,6 +32,31 @@
           <rect x="9" y="9" width="22" height="22" transform="rotate(45 20 20)"/>
         </g>
         <circle cx="20" cy="20" r="3" fill="currentColor"/>
+      </symbol>
+      <symbol id="kettle" viewBox="0 0 56 56">
+        <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+          <path d="M14 30 Q14 18 28 18 Q42 18 42 30 L42 38 Q42 44 36 44 L20 44 Q14 44 14 38 Z"/>
+          <path d="M28 18 L28 12 M22 12 L34 12"/>
+          <path d="M42 28 Q50 28 50 24 Q50 22 48 22"/>
+          <circle cx="28" cy="34" r="1.5" fill="currentColor"/>
+        </g>
+      </symbol>
+      <symbol id="wheat" viewBox="0 0 56 56">
+        <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+          <path d="M28 48 L28 14"/>
+          <path d="M28 18 Q22 16 20 12 Q26 12 28 16 Q30 12 36 12 Q34 16 28 18"/>
+          <path d="M28 26 Q20 24 18 18 Q26 19 28 24 Q30 19 38 18 Q36 24 28 26"/>
+          <path d="M28 34 Q19 32 17 24 Q26 26 28 32 Q30 26 39 24 Q37 32 28 34"/>
+          <path d="M28 42 Q18 40 16 30 Q26 32 28 40 Q30 32 40 30 Q38 40 28 42"/>
+        </g>
+      </symbol>
+      <symbol id="moon" viewBox="0 0 56 56">
+        <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+          <path d="M40 36 Q26 38 22 22 Q22 12 32 10 Q24 18 28 28 Q32 36 44 32 Q42 34 40 36 Z"/>
+          <circle cx="14" cy="14" r="1" fill="currentColor"/>
+          <circle cx="46" cy="46" r="1" fill="currentColor"/>
+          <circle cx="48" cy="18" r="0.8" fill="currentColor"/>
+        </g>
       </symbol>
     </defs>
   </svg>
@@ -112,37 +140,61 @@
     </div>
   </section>
 
-  <!-- ==================== ON THE SHELF ==================== -->
+  <!-- ==================== CATEGORIES (TYPE PANELS) ==================== -->
   <section class="bg-paper">
     <div class="container">
       <div class="section-head reveal">
         <div class="section-head-stack">
-          <span class="eyebrow">On the shelf</span>
-          <h2>A taste of what we carry.</h2>
+          <span class="eyebrow">What we carry</span>
+          <h2>Three counters,<br/>one long aisle.</h2>
         </div>
-        <p class="lede">Teas from London, Lahore, Tehran, and Tabriz. Spices, oils, dried fruit, sweets. The kind of pantry that takes a lifetime of relationships to assemble.</p>
+        <p class="lede">Groceries on the right, bakery in the back, halal meat at the case in front. Some weeks the saffron disappears before noon, come early.</p>
       </div>
 
-      <div class="shop-grid reveal">
-        <div class="shop-photo"><img src="assets/shop-vital-tea.jpg" alt="Vital Premium Black Tea" /></div>
-        <div class="shop-photo"><img src="assets/shop-sadaf-cardamom.jpg" alt="Sadaf cardamom tea" /></div>
-        <div class="shop-photo"><img src="assets/shop-sadaf-50bag.jpg" alt="Sadaf cardamom tea, family size" /></div>
-        <div class="shop-photo"><img src="assets/shop-ahmad-earlgrey.jpg" alt="Ahmad Tea London Earl Grey" /></div>
-        <div class="shop-photo"><img src="assets/shop-brooke-redlabel.jpg" alt="Brooke Bond Red Label loose leaf tea" /></div>
-        <div class="shop-photo"><img src="assets/shop-tea-6.jpg" alt="Specialty tea selection" /></div>
-      </div>
-      <div class="center" style="margin-top:2rem">
-        <a class="link-underline" href="products.html">See the full counter list <span class="arrow">,</span></a>
+      <div class="cat-grid">
+        <a href="products.html#groceries" class="reveal" style="text-decoration:none">
+          <div class="type-panel orange" style="border-radius:var(--radius-lg); aspect-ratio:3/4; min-height:unset">
+            <svg class="pattern" aria-hidden="true" style="color:#fff"><rect width="100%" height="100%" fill="url(#geo-orange)"/></svg>
+            <svg class="icon-mark" style="color:#fff"><use href="#wheat"/></svg>
+            <span class="label">01 &middot; Groceries</span>
+            <h3 style="color:#fff; font-size:clamp(1.4rem, 2.6vw, 2rem)">From the world,<br/>to the shelf.</h3>
+            <p>Rice, lentils, oils, spices, jams, teas, dried fruit. Vendors local and global. House basmati and saffron, if you ask.</p>
+            <span style="margin-top:1.25rem; font-size:11px; letter-spacing:0.3em; text-transform:uppercase; opacity:0.85">Browse ,</span>
+          </div>
+        </a>
+        <a href="products.html#meat" class="reveal" style="text-decoration:none">
+          <div class="type-panel dark" style="border-radius:var(--radius-lg); aspect-ratio:3/4; min-height:unset">
+            <svg class="pattern" aria-hidden="true" style="color:var(--orange-soft)"><rect width="100%" height="100%" fill="url(#geo-orange)"/></svg>
+            <svg class="icon-mark" style="color:var(--orange-soft)"><use href="#moon"/></svg>
+            <span class="label" style="color:var(--orange-soft)">02 &middot; Halal Meat</span>
+            <h3 style="color:#fff; font-size:clamp(1.4rem, 2.6vw, 2rem)">Cut fresh,<br/>cut to order.</h3>
+            <p>Goat, lamb, chicken, beef. Local vendors, expert butchers, and a counter that takes special orders if you call ahead.</p>
+            <span style="margin-top:1.25rem; font-size:11px; letter-spacing:0.3em; text-transform:uppercase; opacity:0.85; color:var(--orange-soft)">Browse ,</span>
+          </div>
+        </a>
+        <a href="products.html#bakery" class="reveal" style="text-decoration:none">
+          <div class="type-panel cream" style="border-radius:var(--radius-lg); aspect-ratio:3/4; min-height:unset">
+            <svg class="pattern" aria-hidden="true" style="color:var(--orange)"><rect width="100%" height="100%" fill="url(#geo-light)"/></svg>
+            <svg class="icon-mark" style="color:var(--orange-deep)"><use href="#kettle"/></svg>
+            <span class="label" style="color:var(--orange-deep)">03 &middot; Bakery</span>
+            <h3 style="color:var(--black); font-size:clamp(1.4rem, 2.6vw, 2rem)">Bread daily.<br/>Sweets always.</h3>
+            <p>Warm bread out by lunchtime. Sweets and pastries from the case. Catering trays for your next gathering.</p>
+            <span style="margin-top:1.25rem; font-size:11px; letter-spacing:0.3em; text-transform:uppercase; color:var(--orange-deep)">Browse ,</span>
+          </div>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ==================== STORY SPLIT ==================== -->
+  <!-- ==================== STORY SPLIT (typography, no meat photo) ==================== -->
   <section class="bg-cream">
     <div class="container">
       <div class="split">
-        <div class="split-image reveal">
-          <img src="assets/hero-meat.jpg" alt="Fresh halal meat, prepared by expert butchers" />
+        <div class="split-image type-panel orange reveal" style="border-radius:var(--radius-lg)">
+          <svg class="pattern" aria-hidden="true" style="color:#fff"><rect width="100%" height="100%" fill="url(#geo-orange)"/></svg>
+          <span class="label" style="color:#fff">Jummah</span>
+          <div class="farsi">&laquo; Friday Market &raquo;</div>
+          <p style="color:#fff; opacity:0.92; max-width:32ch">In Farsi, the day everyone gathers. The day the kettle never stops.</p>
         </div>
         <div class="reveal">
           <span class="eyebrow">Our story</span>
@@ -161,7 +213,7 @@
     <div class="container">
       <div class="sister reveal">
         <div class="sister-art">
-          <svg class="pattern" aria-hidden="true"><rect width="100%" height="100%" fill="url(#geo-orange)"/></svg>
+          <svg class="pattern" aria-hidden="true" style="color:var(--orange)"><rect width="100%" height="100%" fill="url(#geo-orange)"/></svg>
           <div class="label">
             <small>Sister brand</small>
             Mantu &amp; Aushak,<br/>by Jummah Foods,<br/>made to gather.
@@ -188,7 +240,7 @@
       <span class="eyebrow">Our values</span>
       <span class="gold-rule"></span>
       <h2 style="margin:1rem 0; font-style:italic" class="reveal">Come have a cup of tea with us.</h2>
-      <p class="lede reveal" style="margin:0 auto; max-width:55ch">Afghan culture is intimately tied to hospitality. As a guest of Jummah Bazaar, our motivation is simple, that you find what you came for, and that you feel at home while you do.</p>
+      <p class="lede reveal" style="margin:0 auto; max-width:55ch">Afghan culture is intimately tied to hospitality. As a guest of Jummah Bazaar, our motivation is simple: that you find what you came for, and that you feel at home while you do.</p>
     </div>
   </section>
 
