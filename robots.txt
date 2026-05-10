@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jummahbazaaronline.com/sitemap.xml
