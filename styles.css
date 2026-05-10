@@ -729,11 +729,11 @@ footer.site-footer {
 
 /* ----- Modern logo (replaces brand-logo wordmark) ----- */
 .brand-mark-img {
-  height: 56px;
+  height: 36px;
   width: auto;
   display: block;
 }
-@media (max-width: 920px) { .brand-mark-img { height: 48px; } }
+@media (max-width: 920px) { .brand-mark-img { height: 30px; } }
 
 /* ----- Brands strip ----- */
 .brands-strip {
@@ -778,8 +778,8 @@ footer.site-footer {
   isolation: isolate;
 }
 .hero-logo-panel img {
-  width: 70%;
-  max-width: 380px;
+  width: 85%;
+  max-width: 460px;
   height: auto;
   z-index: 1;
 }
