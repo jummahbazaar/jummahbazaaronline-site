@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Amiri:ital,wght@0,400;0,700;1,400&family=Pinyon+Script&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=7" />
+  <link rel="stylesheet" href="styles.css?v=8" />
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
       <pattern id="geo-orange" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M20 0 L40 20 L20 40 L0 20 Z" fill="none" stroke="currentColor" stroke-width="0.5"/><path d="M0 0 L40 40 M40 0 L0 40" stroke="currentColor" stroke-width="0.3"/></pattern>
@@ -55,43 +55,22 @@
 
   <section class="bg-paper">
     <div class="container">
-      <div class="gallery-grid reveal" style="grid-template-columns:repeat(3, 1fr); gap:clamp(1rem, 2vw, 1.5rem)">
-        <div class="hero-logo-panel reveal" style="aspect-ratio:16/6; grid-column:span 3; max-height:340px">
-          <svg class="pattern" aria-hidden="true" style="color:var(--orange)"><rect width="100%" height="100%" fill="url(#geo-orange)"/></svg>
-          <img src="assets/logo-mark.png" alt="Jummah Bazaar" style="width:auto; max-width:340px; max-height:65%" />
-          <span class="badge-text">Springfield, Virginia &middot; Since 1999</span>
-        </div>
-
-        <div class="type-panel orange" style="border-radius:var(--radius-md); aspect-ratio:1/1; min-height:unset">
-          <svg class="pattern" aria-hidden="true" style="color:#fff"><rect width="100%" height="100%" fill="url(#geo-orange)"/></svg>
-          <svg class="icon-mark" style="color:#fff; width:48px; height:48px; margin-bottom:0.75rem"><use href="#wheat"/></svg>
-          <span class="label" style="color:#fff">Groceries</span>
-          <div class="farsi" style="font-size:1.4rem; color:#fff">Rice, saffron,<br/>and the spice wall.</div>
-        </div>
-
-        <div class="type-panel cream" style="border-radius:var(--radius-md); aspect-ratio:1/1; min-height:unset">
-          <svg class="pattern" aria-hidden="true" style="color:var(--orange)"><rect width="100%" height="100%" fill="url(#geo-light)"/></svg>
-          <svg class="icon-mark" style="color:var(--orange-deep); width:48px; height:48px; margin-bottom:0.75rem"><use href="#kettle"/></svg>
-          <span class="label" style="color:var(--orange-deep)">Bakery</span>
-          <div class="farsi" style="font-size:1.4rem; color:var(--charcoal)">Warm bread,<br/>by lunchtime.</div>
-        </div>
-
-        <div class="type-panel dark" style="border-radius:var(--radius-md); aspect-ratio:1/1; min-height:unset">
-          <svg class="pattern" aria-hidden="true" style="color:var(--orange-soft)"><rect width="100%" height="100%" fill="url(#geo-orange)"/></svg>
-          <svg class="icon-mark" style="color:var(--orange-soft); width:48px; height:48px; margin-bottom:0.75rem"><use href="#moon"/></svg>
-          <span class="label" style="color:var(--orange-soft)">Halal Meat</span>
-          <div class="farsi" style="font-size:1.4rem; color:#fff">Goat, lamb,<br/>cut to order.</div>
-        </div>
-
-        <div class="type-panel tint" style="border-radius:var(--radius-md); aspect-ratio:16/9; min-height:unset; grid-column:span 2">
-          <span class="label" style="color:var(--orange-deep)">A small note</span>
-          <div style="font-family:var(--font-display); font-style:italic; font-size:clamp(1.4rem,2.5vw,2rem); color:var(--orange-deep); line-height:1.3; max-width:32ch">&ldquo;Set the table for one more guest than you need.&rdquo;</div>
-        </div>
-
-        <div class="type-panel orange" style="border-radius:var(--radius-md); aspect-ratio:16/9; min-height:unset; grid-column:span 1">
-          <span class="label" style="color:#fff">25</span>
-          <div class="farsi" style="font-size:1.6rem; color:#fff">Years on Rolling Rd.</div>
-        </div>
+      <div class="bazaar-wall reveal">
+        <div class="tile span-2"><img src="assets/hero-halal-neon.jpg" alt="HALAL MEAT neon sign" /><div class="caption">The neon at the door, 6353 Rolling Rd</div></div>
+        <div class="tile"><img src="assets/gal-hummus-wall.jpg" alt="Wall of hummus tahini cans" /><div class="caption">The hummus wall</div></div>
+        <div class="tile"><img src="assets/gal-laziza.jpg" alt="Laziza beverage bottles" /><div class="caption">Laziza, by the bottle</div></div>
+        <div class="tile"><img src="assets/gal-bread-rack.jpg" alt="Fresh bread on the rack" /><div class="caption">Bread, by lunchtime</div></div>
+        <div class="tile"><img src="assets/gal-ayran.jpg" alt="Ayran yogurt drink" /><div class="caption">Ayran, by the pint</div></div>
+        <div class="tile"><img src="assets/gal-sadaf-yogurt.jpg" alt="Sadaf nonfat yogurt tubs" /><div class="caption">Sadaf yogurt</div></div>
+        <div class="tile"><img src="assets/gal-pickles.jpg" alt="Sera and Zarrin pickled cucumbers" /><div class="caption">Sera &amp; Zarrin pickles</div></div>
+        <div class="tile span-2"><img src="assets/shelf-bulk-dispensers.jpg" alt="Bulk dispensers of seeds and dried fruit" /><div class="caption">The bulk wall, $3.99 to $9.99</div></div>
+        <div class="tile"><img src="assets/gal-puck.jpg" alt="Puck cream cheese" /><div class="caption">Puck spreadable cheese</div></div>
+        <div class="tile"><img src="assets/gal-ariana-chatni.jpg" alt="Ariana brand turshee and chatni" /><div class="caption">Ariana turshee &amp; chatni</div></div>
+        <div class="tile"><img src="assets/gal-juice.jpg" alt="Mira and Abbas juices" /><div class="caption">Mira &amp; Abbas juices</div></div>
+        <div class="tile"><img src="assets/gal-dates.jpg" alt="Ziyad Deglet Noor dates" /><div class="caption">Ziyad Deglet Noor dates</div></div>
+        <div class="tile"><img src="assets/gal-honey.jpg" alt="Local honey display" /><div class="caption">Honey, multi-floral and clover</div></div>
+        <div class="tile"><img src="assets/gal-venezia.jpg" alt="Venezia Sorini chocolates" /><div class="caption">Venezia Sorini chocolates</div></div>
+        <div class="tile"><img src="assets/gal-masood-tea.jpg" alt="Masood green tea jars" /><div class="caption">Masood green tea</div></div>
       </div>
     </div>
   </section>
